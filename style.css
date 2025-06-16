@@ -1,0 +1,338 @@
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: url('https://img.freepik.com/free-vector/abstract-digital-grid-black-background_53876-97647.jpg?t=st=1718540878~exp=1718541478~hmac=5ff298ffba8ea6a3c9eeac2ac3e0875ab3ff67440b0b5d13c735879256ebfd92&w=1380') no-repeat center center fixed;
+    background-size: cover;
+    color: #f4f4f4;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: rgba(0, 0, 0, 0.6);
+    text-align: center;
+    padding: 3em 1em;
+    border-bottom: 1px solid #555;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.8em;
+    color: #00e6e6;
+}
+
+header p {
+    font-size: 1.3em;
+    color: #cccccc;
+}
+
+/* Navigation */
+nav {
+    background-color: rgba(30, 30, 30, 0.8);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 1em;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    gap: 1.5em;
+}
+
+nav a {
+    color: #00e6e6;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s, transform 0.3s;
+}
+
+nav a:hover {
+    color: #ffffff;
+    transform: scale(1.05);
+    text-shadow: 0 0 8px #00e6e6;
+}
+
+/* Section Layout */
+section {
+    background-color: rgba(0, 0, 0, 0.7);
+    margin: 2em auto;
+    padding: 2em;
+    border-radius: 12px;
+    max-width: 1000px;
+    width: 90%;
+    box-shadow: 0 0 20px rgba(0,0,0,0.6);
+}
+
+section h2 {
+    color: #00e6e6;
+    margin-bottom: 1em;
+    border-bottom: 2px solid #00e6e6;
+    padding-bottom: 0.3em;
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 2em;
+}
+
+a {
+    color: #00e6e6;
+}
+
+a:hover {
+    color: #ffffff;
+}
+
+/* Profile */
+.profile-container {
+    display: flex;
+    align-items: center;
+    gap: 2em;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.profile-pic {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #00e6e6;
+    box-shadow: 0 0 15px rgba(0, 230, 230, 0.5);
+}
+
+/* Resume Button */
+#resume a {
+    background-color: #00e6e6;
+    color: #000;
+    padding: 0.7em 1.5em;
+    border-radius: 6px;
+    display: inline-block;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+#resume a:hover {
+    background-color: #ffffff;
+    color: #000;
+}
+
+/* Contact Section */
+#contact a {
+    color: #00e6e6;
+    text-decoration: underline;
+}
+
+#contact a:hover {
+    color: #ffffff;
+    text-shadow: 0 0 6px #00e6e6;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1.5em;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #aaaaaa;
+    font-size: 0.9em;
+    border-top: 1px solid #555;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.2em;
+    }
+
+    .profile-container {
+        flex-direction: column;
+    }
+
+    .profile-pic {
+        width: 150px;
+        height: 150px;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 1em;
+    }
+}
+#contact {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 3em 1.5em;
+  border-radius: 12px;
+  text-align: center;
+  max-width: 900px;
+  margin: 4em auto;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
+  color: #f0f0f0;
+}
+
+#contact h2 {
+  font-size: 2.2em;
+  color: #7dcfff;
+  margin-bottom: 0.3em;
+}
+
+#contact p {
+  font-size: 1em;
+  color: #cccccc;
+  margin-bottom: 2em;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  padding: 1em;
+}
+
+.contact-form input,
+.contact-form textarea {
+  background-color: rgba(20, 20, 20, 0.8);
+  border: 1px solid #7dcfff;
+  color: #fff;
+  padding: 0.8em;
+  font-size: 1em;
+  border-radius: 8px;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #00e6e6;
+  box-shadow: 0 0 10px #00e6e6;
+}
+
+.form-buttons {
+  display: flex;
+  gap: 1em;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 1.5em;
+}
+
+.send-btn,
+.resume-btn {
+  background: #7dcfff;
+  border: none;
+  color: black;
+  padding: 0.75em 1.8em;
+  font-weight: bold;
+  font-size: 1em;
+  border-radius: 8px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.send-btn:hover {
+  background: #00e6e6;
+  color: #000;
+}
+
+.resume-btn {
+  background-color: transparent;
+  border: 2px solid #7dcfff;
+  color: #7dcfff;
+}
+
+.resume-btn:hover {
+  background-color: #7dcfff;
+  color: black;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .form-buttons {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .send-btn,
+  .resume-btn {
+    width: 100%;
+  }.certificates-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Wider cards for full screen */
+  gap: 2rem;
+  padding: 2rem;
+  max-width: 1400px;
+  margin: auto;
+  justify-content: center;
+}
+
+.certificate-box {
+  background-color: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 16px;
+  text-align: center;
+  padding: 2rem 1.5rem;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.05);
+}
+
+.certificate-box:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 10px 40px rgba(0, 255, 255, 0.2);
+}
+
+.certificate-box h3 {
+  color: #f0f0f0;
+  font-size: 1.15rem;
+  margin-bottom: 1.2rem;
+  line-height: 1.4;
+}
+
+.btn-group {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.btn {
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.btn.view {
+  background-color: #3498db;
+  color: #fff;
+}
+
+.btn.download {
+  background-color: transparent;
+  border: 2px solid #3498db;
+  color: #3498db;
+}
+
+.btn:hover {
+  background-color: #2980b9;
+  color: #fff;
+  border-color: transparent;
+  transform: scale(1.05);
+}
+
+/* Responsive Fix */
+@media (max-width: 768px) {
+  .certificates-grid {
+    grid-template-columns: 1fr;
+    padding: 1.5rem;
+  }
+
+  .btn-group {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+}
+
+
