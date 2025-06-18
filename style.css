@@ -258,75 +258,50 @@ footer {
     width: 100%;
   }.certificates-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Wider cards for full screen */
+  grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
-  padding: 2rem;
-  max-width: 1400px;
-  margin: auto;
-  justify-content: center;
+  margin-top: 2rem;
 }
 
-.certificate-box {
+.certificate-card {
   background-color: rgba(255, 255, 255, 0.05);
-  backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.15);
-  border-radius: 16px;
+  padding: 1.5rem;
+  border-radius: 12px;
+  border: 1px solid #00ffff;
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.2);
   text-align: center;
-  padding: 2rem 1.5rem;
-  transition: transform 0.4s ease, box-shadow 0.4s ease;
-  box-shadow: 0 0 20px rgba(0, 255, 255, 0.05);
-}
-
-.certificate-box:hover {
-  transform: translateY(-10px) scale(1.03);
-  box-shadow: 0 10px 40px rgba(0, 255, 255, 0.2);
-}
-
-.certificate-box h3 {
-  color: #f0f0f0;
-  font-size: 1.15rem;
-  margin-bottom: 1.2rem;
-  line-height: 1.4;
 }
 
 .btn-group {
   display: flex;
   justify-content: center;
   gap: 1rem;
-  flex-wrap: wrap;
+  margin-top: 1rem;
 }
 
 .btn {
-  padding: 0.6rem 1.2rem;
+  padding: 0.75rem 1.5rem;
   border-radius: 8px;
   text-decoration: none;
   font-weight: bold;
-  transition: all 0.3s ease;
+  display: inline-block;
 }
 
 .btn.view {
-  background-color: #3498db;
-  color: #fff;
+  background-color: #2196f3;
+  color: white;
 }
 
 .btn.download {
   background-color: transparent;
-  border: 2px solid #3498db;
-  color: #3498db;
+  border: 2px solid #2196f3;
+  color: #2196f3;
 }
 
-.btn:hover {
-  background-color: #2980b9;
-  color: #fff;
-  border-color: transparent;
-  transform: scale(1.05);
-}
-
-/* Responsive Fix */
+/* Responsive fix for smaller screens */
 @media (max-width: 768px) {
   .certificates-grid {
     grid-template-columns: 1fr;
-    padding: 1.5rem;
   }
 
   .btn-group {
@@ -334,5 +309,36 @@ footer {
     gap: 0.75rem;
   }
 }
+#certifications {
+  padding: 2rem;
+}
 
+.certificates-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
 
+.certificate-card {
+  background-color: rgba(0, 0, 0, 0.5);
+  border: 1px solid #00ffff;
+  border-radius: 12px;
+  padding: 1rem;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.certificate-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 25px rgba(0, 255, 255, 0.4);
+}
+
+.certificate-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Loga Sowndharya | Django Projects</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #f4f7fc;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #4f46e5;
+      color: #fff;
+      padding: 2rem;
+      text-align: center;
+      border-bottom-left-radius: 30px;
+      border-bottom-right-radius: 30px;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+    }
+
+    header p {
+      margin-top: 0.5rem;
+      font-size: 1.1rem;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 3rem auto;
+      padding: 0 2rem;
+    }
+
+    .project-section h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: #4f46e5;
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 0.5rem;
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+
+    .project {
+      background: #fff;
+      padding: 1.5rem;
+      border-radius: 20px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+      transition: transform 0.3s ease;
+    }
+
+    .project:hover {
+      transform: translateY(-5px);
+    }
+
+    .project h3 {
+      color: #333;
+      margin-bottom: 0.5rem;
+    }
+
+    .project p {
+      margin-bottom: 1rem;
+      font-size: 0.95rem;
+    }
+
+    .project a {
+      display: inline-block;
+      margin-top: 0.5rem;
+      padding: 0.5rem 1rem;
+      background: #4f46e5;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 8px;
+      transition: background 0.3s;
+    }
+
+    .project a:hover {
+      background: #3730a3;
+    }
+
+    .back-link {
+      margin-bottom: 2rem;
+    }
+
+    .back-link a {
+      color: #4f46e5;
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      color: #888;
+      font-size: 0.9rem;
+    }
+
+    @media (min-width: 768px) {
+      .projects {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Loga Sowndharya</h1>
+  <p>Final year Bioinformatics student | Django Web Developer</p>
+</header>
+
+<main class="container">
+  <div class="back-link">
+    <a href="index.html">← Back to Portfolio</a>
+  </div>
+
+  <section class="project-section">
+    <h2>Django Projects</h2>
+    <div class="projects">
+
+      <div class="project">
+        <h3>Django CRUD App</h3>
+        <p>This project performs Create, Read, Update, Delete operations using Django models, forms, and templates.</p>
+        <a href="https://github.com/LogaSowndharya/django-project" target="_blank">View on GitHub</a>
+      </div>
+
+    </div>
+  </section>
+</main>
+
+<footer>
+  © 2025 Loga Sowndharya. All rights reserved.
+</footer>
+
+</body>
+</html>
